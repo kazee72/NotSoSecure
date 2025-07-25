@@ -1,6 +1,6 @@
 # NotSoSecure
 
-Making you feel insecure about your password. 😉<br>
+Making you feel insecure about your password.<br>
 These are my approaches to cracking passwords in many different ways.<br>
 Started using python, but was quickly reminded how slow and inefficient the language is when it comes to performance intesive tasks.<br>
 As this project grows, it will include more and more ways so crack password.<br>
