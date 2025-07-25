@@ -18,6 +18,16 @@ If you are unfamiliar with the concept of brute force and want an in depth expla
 The article talks about it more generaly but you will get the jist of what we are trying to do here.<br>
 In short, in our context brute forcing just means we try every possible combinations of allowed characters as the password until we find it.<br>
 As you can imagine this gets reaaally intense for our cpu really fast.<br>
-Meaning especially using modern hashing algorithms this approach is not exactly practical in the real world.
+Meaning especially using modern hashing algorithms this approach is not exactly practical in the real world.<br>
+I still decided to write an algorithm to see what my cpu can handle :).
+
+#### Python
+
+Once we have all the combinations of characters we need to hash them.<br>
+When a password is saved in a database or wherever it is usually (hopefully) not saved as a plain String but as a Hash.<br>
+To get said Hash we use a Hashing-Algorithm notably sha-256.<br>
+This hashing is what becomes our biggest hurdle when brute forcing since sha-256 has to be run hundreds of millions or even billions of times to hash every single combination.<br>
+Since python doesnt natively allow multithreading, due to the GIL (Global Interpreter Lock), we use multiprocessing instead.<br>
+
 
 
